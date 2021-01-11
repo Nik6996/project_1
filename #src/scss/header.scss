@@ -1,0 +1,503 @@
+.header {
+	background: url(../img/bgc.jpg) no-repeat center ; 
+	max-width: 2560px;
+	height: auto;
+
+	&__top {
+
+	}
+	&__bottom {
+	}
+}
+//+++++++++++++++++++++++++++++++++++++ ВЕРХ ШАПКИ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.top-header { 
+
+	&__content {
+		display: flex;
+	}
+
+	&__column {
+		display: flex;
+		flex: 1 1 auto;
+		height: 90px;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+
+	}
+
+	&__logo {
+	background: url(../img/logo1.svg) no-repeat;
+	width: 175px;
+	height: 24px;
+	position: relative;
+	z-index: 10;
+	
+	}
+
+	&__menu {
+		
+	}
+
+	&__bar {
+		justify-content: center;
+		position: relative;
+		
+	}
+
+	&__line {
+		
+	}
+
+}
+.container {
+	
+}
+.logo {
+	margin: 0px 10px;
+}
+.menu {
+	position: relative;
+	z-index: 3;
+	
+	&__icon {
+	}
+
+
+	&__body {
+
+	}
+
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 5;
+		
+		li{
+		margin: 0px 47px 0px 0px;	
+		display:block;
+		white-space: nowrap;
+		}
+		:last-child {
+			margin-right: 0;
+			}
+	}
+
+
+	&__link {
+		display: flex;
+		color: white;
+		font-size: 16px;
+		line-height: 135%;
+		
+		
+	}
+}
+.icon-menu {
+display: none;
+
+}
+
+
+
+.bar {
+display: flex;
+position: relative;
+z-index: 9;
+
+	&__search {
+		background: url(../img/Search.png) no-repeat;
+		width: 20px;
+		height: 17px;
+		margin: 0px 50px 0px 0px;
+		@media (max-width: 550px){
+        margin: 0px 20px 0px 0px ;
+		}
+
+	}
+
+	&__language {
+		background: url(../img/Globe.png)no-repeat;
+		width: 100px;
+		height: 18px;
+		padding: 0px 10px 0px 27px;
+		color: white;
+		font-size: 16px;
+		line-height: 150%;
+
+	}
+	
+	
+}
+.line {
+	
+	background-color: white;
+		width: 100%;
+		height: 2px;
+}
+//=================================================== Низ шапки =====================================================
+.bottom-header {
+	position: relative;
+	z-index: 2;
+	&__title{
+		justify-content: start;
+		padding: 0px 0px 70px 20px;
+		@media (max-width: 1140px){
+			padding: 0px 0px 0px 0px ;
+		}
+	}
+	
+	
+
+	&__contant {
+		display: flex;
+		height: 709px;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		@media (max-width: 1140px){
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		position: relative;
+		display: flex;
+	    width: 100%;
+    	height: 100%;
+	    align-items: center;
+		justify-content: start;
+		@media (max-width: 1140px){
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+
+	&__wrapper {
+		display: flex;
+		position: absolute;
+		left: 0;
+		bottom: 53px;
+		padding: 0px 0px 0px 10px;
+		 @media (max-width: 1140px){
+			position: inherit;
+			align-items: center;
+			justify-content: center;
+			padding: 50px 0px 0px 0px ;
+		}
+	}
+}
+.title {
+
+
+	&__logo {
+		font-family: "plumb";
+        font-weight: bold;
+        font-size: 64px;
+		color: white;
+		height: 74px;
+		margin: 20px 0px;	
+		text-transform: uppercase;
+		letter-spacing: -0.05em;
+			
+	}
+
+	&__text {
+font-family: Circe;
+font-size: 24px;
+color: white;
+line-height: 140%;
+	}
+
+	&__nav {
+font-family: Circe;
+font-size: 16px;
+line-height: 80px;
+color: white;
+background: url(../img/Arrow.png) no-repeat right;
+padding: 0px 25px 2px 0px;
+	}
+}
+.wrapper {
+padding: 0px 30px 0px 0px;
+
+	&__column {
+	
+	}
+
+	&__item {
+		
+	}
+}
+.item {
+
+	    &__block1{
+			width: 255px;
+            height: 148px;
+			background: #2378FC;
+
+				}
+		&__block2{
+			width: 255px;
+            height: 175px;
+			background: #30BCC9;
+			margin: 30px 0px 0px 0px;
+
+				}
+		&__block3{
+			width: 255px;
+            height: 148px;
+			background: #FFC41E;
+			margin: 0px 0px 0px 30px
+
+				}
+				
+		&__block4{
+			width: 255px;
+            height: 175px;
+			background: #F6404F;
+			margin: 30px 0px 0px 30px;
+				}
+
+				
+
+	&__block {
+	position: relative;
+	
+	span{
+		display: block;
+		position: absolute;
+		top: 30px;
+		left: 40px;
+		font-size: 21px;
+		font-family: Plumb;
+        line-height: 130%;
+	    letter-spacing: -0.01em;
+	    color: #FFFFFF;
+	}
+	}
+
+	&__list {
+		position: absolute;
+		bottom: 30px;
+		left: 20px;
+		background: url(../img/Arrow.png) no-repeat right;
+		padding: 0px 22px 0px 20px;
+		font-size: 14px;
+        line-height: 135%;
+        color: #FFFFFF;
+
+	}
+
+// @media (max-width:  1140px ) {
+// display: none;
+// }
+
+}
+
+
+//================================================================АДАПТАЦИЯ==========================================================================//
+
+
+@media (max-width: 1140px ){
+
+	.body.lock{
+		overflow: hidden;
+    }
+
+	.icon-menu{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 10;
+	}
+	.icon-menu{
+	span{
+		position: absolute;
+		background-color: white;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.5s ease 0;
+	}
+	}
+	.icon-menu::before,
+	.icon-menu::after{
+		content: '';
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.icon-menu::before{
+		top: 0;
+	}
+	.icon-menu::after{
+		bottom: 0;
+	}
+	.icon-menu.active::before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.icon-menu.active::after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.icon-menu.active{
+		span{
+			display: none;
+		}
+	}
+	
+
+.body-menu{
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	height: 500px;
+	background-color:yellowgreen;
+	z-index: 9;
+	transition: all 0.5s ease 0s;
+	display: flex;
+	justify-content: center;
+	max-width: 300px;
+	
+}
+
+.body-menu.active{
+	top: 0;
+	max-width: 300px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+
+	.menu{
+display: flex;
+justify-content: center;
+	&__list {
+		padding: 100px 0px 0px 0px ;
+		display: block;
+		li{
+			margin: 0px 0px 30px 0px ;
+		}
+	}
+	&__link {
+		font-size: 30px;
+	}
+}
+}
+
+
+@media (max-width: 548px ){
+	.bottom-header{
+		&__wrapper {
+			display: inline-block;
+margin: 0 auto;
+	}
+}
+.wrapper{
+padding: 0;
+margin: 0;
+}
+
+	.item {
+
+	    &__block1{
+			width: 200px;
+            height: 120px;
+			background: #2378FC;
+			padding: 0;
+			
+				}
+		&__block2{
+			width: 200px;
+            height: 120px;
+			background: #30BCC9;
+			margin: 10px 0px 0px 0px ;
+				}
+		&__block3{
+			width: 200px;
+            height: 120px;
+			padding: 0px 0px 0px 0px ;
+			margin: 10px 0px 0px 0px ;
+				}
+				
+		&__block4{
+			width: 200px;
+            height: 120px;
+            margin: 10px 0px 0px 0px ;
+				}
+
+				
+
+	&__block {
+	position: relative;
+	
+	span{
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 25px;
+		font-size: 21px;
+		font-family: Plumb;
+        line-height: 130%;
+	    letter-spacing: -0.01em;
+	    color: #FFFFFF;
+	}
+	}
+
+	&__list {
+		position: absolute;
+		bottom: 8px;
+		left: 5px;
+		background: url(../img/Arrow.png) no-repeat right;
+		padding: 0px 22px 0px 20px;
+		font-size: 14px;
+        line-height: 135%;
+        color: #FFFFFF;
+
+	}
+}
+.title{
+	height: 200px;
+	&__logo{
+		padding: 40px 0px 20px 0px ;
+		font-size: 34px;
+		margin: 0 auto;
+		height: 20px;
+	}
+	&__text{
+		display: none;
+	}
+}
+.bar{
+	&__language{
+		display: none;
+	}
+}
+
+
+.body-menu{
+	right: -100%;
+	top: 0;
+	width: 200px;
+    height: 390px ;
+}
+
+.body-menu.active{
+	right: 0;
+}
+.menu{
+	&__link{
+		line-height: 90%;
+	}
+}
+}

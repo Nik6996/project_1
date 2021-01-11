@@ -1,0 +1,85 @@
+.footer {
+background-color:#30BCC9;
+height: 430px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column {
+		padding-top: 60px;
+		
+	}
+
+	&__card {
+	}
+}
+.container {
+}
+.info {
+
+&__logo {
+font-family: Plumb;
+font-weight: 500;
+font-size: 21px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+margin: 0px 0px 20px 0px;
+	}
+
+	&__text {
+	max-width: 255px;
+	margin-bottom: 40px;
+p{
+	font-family: Circe;
+	font-size: 14px;
+	line-height: 135%;
+	color: #E0E0E0;
+}
+li{
+	margin-bottom: 10px;
+}
+	}
+
+	&__list {
+		font-family: Circe;
+		font-size: 14px;
+		color: #E0E0E0;
+	
+	}
+
+&__list:hover{
+	color: rgb(134, 134, 70);
+}
+
+	&__href1 {
+	
+	}
+
+	
+	&__git{
+
+	}
+	&__href2 {
+
+	}
+
+	&__link1 {
+
+	}
+
+	&__link2 {
+	}
+
+	&__link3 {
+	}
+
+	&__link4 {
+	}
+
+	&__mail {
+
+	}
+}
+
+

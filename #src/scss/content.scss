@@ -1,0 +1,236 @@
+.content {
+
+	&__top {
+		
+	}
+}
+.top-content {
+background-color: #2378FC;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		height: 426px;
+	}
+
+	&__column {
+		padding: 75px 0px 0px 0px;
+	}
+
+	&__heading {
+		font-family: Plumb;
+    font-style: normal;
+    font-weight: 500;
+    //font-size: 30px;
+	line-height: 130%;
+	letter-spacing: -0.01em;
+	color: #FFFFFF;
+	font-size: calc(15px + 15 * (100vw / 1920));
+	}
+
+	&__list {
+	}
+}
+.container {
+}
+.list {
+display: flex;
+margin-top: 15px;
+	&__link {
+	display: flex;
+	font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+	//font-size: 16px;
+	font-size: calc(7px + 8 * (100vw / 1920));
+    line-height: 135%;
+    color: #FFFFFF;
+    margin: 15px 0px 0px 0px;
+	}
+	&__link:hover{
+		color:  #FFC41E;
+	}
+}
+
+
+
+.content {
+
+	&__bottom {
+		height: 984px;
+	}
+}
+.bottom-content {
+background-color: #FFC41E;
+height: 100%;
+
+&__content {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		height: 169px;
+		align-items: center;
+	}
+
+	&__name {
+		font-family: Plumb;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+color: #2E373B;
+	}
+
+	&__link {
+	background: url(../img/Arrow-black.svg) no-repeat right;
+	padding: 0px 29px 0px 0px;
+	font-family: Plumb;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    text-decoration-line: underline;
+	color: #2E373B;
+	
+	}
+
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+	 
+		
+	}
+
+	&__card {
+		width: 350px;
+	}
+
+	
+}
+.conteiner {
+}
+.card {
+	padding: 0px 0px 0px 0px;
+	height: 388px;
+	max-width: 350px;
+	
+
+
+	&__data {
+	font-family: Circe;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #2E373B;
+
+	}
+
+	&__logo {
+	margin-top: 10px;
+	}
+
+	&__href {
+	font-family: Plumb;
+    font-weight: 500;
+    font-size: 21px;
+    
+    letter-spacing: -0.01em;
+    color: #F6404F;
+	}
+
+	&__this {
+		font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #2E373B;
+	}
+
+	&__img1 {
+		display: block;
+		background: url(../img/card1.png) center / cover no-repeat;	
+		max-width: 100%;
+		height: 240px;
+		}
+
+	&__img2 {
+	    display: block;
+		background: url(../img/card4.png) center / cover no-repeat;
+		max-width: 100%;
+		height: 240px;
+	}
+
+	&__img3 {
+		display: block;
+		background: url(../img/card2.png)center / cover no-repeat;
+		max-width: 100%;
+		height: 240px;
+	}
+
+	&__img4 {
+		display: block;
+		background: url(../img/card5.png)center / cover no-repeat;
+		max-width: 100%;
+		height: 240px;
+	}
+
+	&__img5 {
+		display: block;
+		background: url(../img/card3.png)center / cover no-repeat;
+		max-width: 100%;
+		height: 240px;
+	}
+
+	&__img6 {
+		display: block;
+		background: url(../img/card6.png)center / cover no-repeat;
+		max-width: 100%;
+		height: 240px;
+	}
+}
+
+
+//===========================================================АДАПТАЦИЯ=====================================================//
+
+@media (max-width:  1090px ) {
+.bottom-content{
+&__content{
+justify-content: space-around;
+}
+}
+.column-content{
+ display: none;
+}
+.adapt{
+	display: flex;
+	justify-content: space-around;
+}
+}
+
+@media (min-width: 1090px  ) {
+	.adapt{
+display: none;
+	}
+}
+
+@media (max-width:  718px ) {
+.bottom-content{
+	&__nav{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	&__content{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.adapt{
+	flex-direction: column;
+	align-items: center;
+}
+}
+
