@@ -11,21 +11,21 @@ background-color: #2378FC;
 		display: flex;
 		justify-content: space-between;
 		height: 426px;
+		padding: 0px 0px 0px 10px ;
 	}
 
 	&__column {
-		padding: 75px 0px 0px 0px;
+		padding: 75px 0px 0px 5px;
 	}
 
 	&__heading {
-		font-family: Plumb;
+	font-family: Plumb;
     font-style: normal;
-    font-weight: 500;
-    //font-size: 30px;
+   // font-weight: 500;
 	line-height: 130%;
 	letter-spacing: -0.01em;
 	color: #FFFFFF;
-	font-size: calc(15px + 15 * (100vw / 1920));
+	font-size: calc(10px + 15 * (100vw / 1920));
 	}
 
 	&__list {
@@ -40,8 +40,7 @@ margin-top: 15px;
 	display: flex;
 	font-family: Circe;
     font-style: normal;
-    font-weight: normal;
-	//font-size: 16px;
+   //font-weight: normal;
 	font-size: calc(7px + 8 * (100vw / 1920));
     line-height: 135%;
     color: #FFFFFF;
@@ -51,6 +50,7 @@ margin-top: 15px;
 		color:  #FFC41E;
 	}
 }
+
 
 
 
@@ -81,8 +81,9 @@ height: 100%;
 		font-family: Plumb;
 font-style: normal;
 font-weight: 500;
-font-size: 30px;
+//font-size: 30px;
 color: #2E373B;
+font-size: calc(15px + 25 * (100vw / 1920));
 	}
 
 	&__link {
@@ -153,7 +154,7 @@ color: #2E373B;
 	&__img1 {
 		display: block;
 		background: url(../img/card1.png) center / cover no-repeat;	
-		max-width: 100%;
+		width: 100%;
 		height: 240px;
 		}
 
@@ -219,6 +220,7 @@ display: none;
 
 @media (max-width:  718px ) {
 .bottom-content{
+	
 	&__nav{
 		flex-direction: column;
 		justify-content: space-around;
@@ -232,5 +234,33 @@ display: none;
 	flex-direction: column;
 	align-items: center;
 }
+.list {
+margin-top: 5px;
+		&__link {
+margin: 5px 0px 0px 0px ;
+line-height: 100%;
+
 }
+}
+
+.top-content{
+	&__container{
+justify-content: space-around;
+height: 250px;
+	}
+
+}
+.card{
+	width: 320px;
+	
+		&__img1,&__img2,&__img3,&__img4,&__img5,&__img6{
+			width: 320px;
+			margin: 0 auto;
+		}
+		&__href,&__data,&__this{
+			padding: 0px 0px 0px 10px ;
+		}
+	}
+}
+
 
