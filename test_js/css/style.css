@@ -447,20 +447,41 @@
 
 .footer {
   background-color: #30BCC9;
-  height: 430px;
 }
 
-.footer__container {
+.footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-top: 60px;
+}
+
+.link-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.link-info__link {
+  margin: 0px 30px 0px 0px;
 }
 
 .info__logo {
@@ -498,38 +519,100 @@
   color: #868646;
 }
 
+.info__href1 {
+  margin: 0 auto;
+}
+
+.info__git {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__href2 {
+  padding: 15px 0px 0px 0px;
+}
+
+.info__mail form {
+  position: relative;
+  width: 255px;
+  margin: 0 auto;
+}
+
+.info__mail input {
+  position: absolute;
+  height: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.info__mail button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.info__mail svg {
+  position: relative;
+  top: 4px;
+}
+
 .news {
   background-color: #FAF3E3;
-  height: 649px;
+  padding-bottom: 85px;
 }
 
 .news__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__column {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   padding: 75px 0px 0px 0px;
 }
 
-.news__column_main {
-  margin-left: 15px;
+.news__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .news__img1 {
-  background: url(../img/news1.png) no-repeat center;
-  width: 445px;
+  background: url(../img/news1.png) no-repeat;
+  width: calc(280px + 135 * (100vw / 1200));
   height: 215px;
   margin-bottom: 59px;
 }
 
 .news__img2 {
-  background: url(../img/news2.png);
-  width: 445px;
+  background: url(../img/news2.png) no-repeat;
+  width: calc(280px + 135 * (100vw / 1200));
   height: 215px;
 }
 
@@ -539,6 +622,7 @@
   display: flex;
   position: relative;
   max-width: 530px;
+  padding: 0px 0px 0px 10px;
 }
 
 .news__logo {
@@ -570,13 +654,6 @@
   display: flex;
 }
 
-.bottom-news__img {
-  background: url(../img/news3.png) left;
-  min-width: 160px;
-  height: 120px;
-  margin: 30px 0px 0px 0px;
-}
-
 .bottom-news__body {
   margin: auto;
 }
@@ -591,23 +668,30 @@
 .bottom-news__text {
   font-family: Plumb;
   font-weight: 500;
-  font-size: 21px;
+  font-size: calc(10px + 11 * (100vw / 1200));
   color: #2E373B;
   margin-left: 30px;
+}
+
+.bottom-news__img {
+  background: url(../img/news3.png) left;
+  min-width: 160px;
+  height: 120px;
+  margin: 30px 0px 0px 10px;
 }
 
 .bottom-news__img1 {
   background: url(../img/news4.png) left;
   min-width: 160px;
   height: 120px;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 10px;
 }
 
 .bottom-news__img2 {
   background: url(../img/news5.png) left;
   min-width: 160px;
   height: 120px;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 10px;
 }
 
 .container {
@@ -879,6 +963,59 @@ h6 {
   }
 }
 
+@media (max-width: 800px) {
+  .footer__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding-top: 10px;
+  }
+
+  .footer__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+  }
+
+  .info__logo {
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 0px 0px 10px;
+  }
+
+  .info__mail {
+    display: none;
+  }
+
+  .news__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .info__text {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 718px) {
   .bottom-content__nav {
     -webkit-box-orient: vertical;
@@ -1051,6 +1188,51 @@ h6 {
   }
 }
 
+@media (max-width: 530px) {
+  .info__mail form {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .link-info__link {
+    margin: 0px 7px 0px 0px;
+  }
+
+  .link-info__link svg {
+    width: 30;
+    height: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .info__list {
+    font-size: 12px;
+  }
+
+  .info__href1 svg {
+    width: 120px;
+    height: 30px;
+  }
+
+  .info__href2 svg {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .info__text li {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 350px) {
+  .bottom-news__text {
+    margin-left: 15px;
+  }
+}
+
 .webp .header { background: url(../img/bgc.webp) no-repeat center; }
 
 .webp .bar__search { background: url(../img/Search.webp) no-repeat; }
@@ -1073,9 +1255,9 @@ h6 {
 
 .webp .card__img6 { background: url(../img/card6.webp) center/cover no-repeat; }
 
-.webp .news__img1 { background: url(../img/news1.webp) no-repeat center; }
+.webp .news__img1 { background: url(../img/news1.webp) no-repeat; }
 
-.webp .news__img2 { background: url(../img/news2.webp); }
+.webp .news__img2 { background: url(../img/news2.webp) no-repeat; }
 
 .webp .bottom-news__img { background: url(../img/news3.webp) left; }
 

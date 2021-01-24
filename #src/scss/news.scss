@@ -1,39 +1,50 @@
 .news {
 background-color: #FAF3E3;
-height: 649px;
+padding-bottom: 85px;
 
 
 	&__container {
 		display: flex;
-		
+		flex-wrap: wrap;
+
 	}
 
 	&__column {
-		flex: 1 1 ;
+		flex: 1 1 50%;
 		padding: 75px 0px 0px 0px;
-		&_main{
-			margin-left: 15px;
-		}
+		@media (max-width: 800px  ) {		
+        flex: 0 0 100%;
+			}
+
+	}
+
+	&__img{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 	}
 
 	&__img1 {
-		background: url(../img/news1.png) no-repeat center;
-		width: 445px;
+		background: url(../img/news1.png) no-repeat;
+		width: calc(280px + 135 * (100vw / 1200));
 		height: 215px;
 		margin-bottom: 59px ;
+		
 		}
 
 	&__img2 {
-		background: url(../img/news2.png);
-		width: 445px;
+		background: url(../img/news2.png) no-repeat;
+		width: calc(280px + 135 * (100vw / 1200));
 		height: 215px;
+		
 	}
 
 	&__header {
 		display: flex;
 		position: relative;
 		max-width: 530px;
-		
+		padding: 0px 0px 0px 10px ;
 	}
 
 	&__logo {
@@ -43,6 +54,7 @@ font-size: 30px;
 margin: 0px 0px 10px 0px;
 letter-spacing: -0.01em;
 color: #2E373B;
+
 	}
 
 	&__href {
@@ -68,6 +80,7 @@ color: #2E373B;
 .news {
 
 	&__bottom {
+		
 	}
 }
 .bottom-news {
@@ -76,12 +89,7 @@ color: #2E373B;
 		display: flex;
 	}
 
-	&__img {
-		background: url(../img/news3.png) left;
-		min-width: 160px; 
-		height: 120px;
-		margin: 30px 0px 0px 0px;
-	}
+
 
 	&__body {
 		margin: auto;
@@ -99,27 +107,36 @@ color: #2E373B;
 	&__text {
 font-family: Plumb;
 font-weight: 500;
-font-size: 21px;
+font-size: calc(10px + 11 * (100vw / 1200));
 color: #2E373B;
 margin-left: 30px ;
+@media (max-width:  350px ) {
+margin-left: 15px;
+}
+	}
+
+	&__img {
+		background: url(../img/news3.png) left;
+		min-width: 160px; 
+		height: 120px;
+		margin: 30px 0px 0px 10px;
 	}
 
 	&__img1 {
 		background: url(../img/news4.png) left;
 		min-width: 160px; 
 		height: 120px;
-		margin: 30px 0px 0px 0px;
+		margin: 30px 0px 0px 10px;
 	}
 
 	&__img2 {
 		background: url(../img/news5.png) left;
 		min-width: 160px; 
 		height: 120px;
-		margin: 30px 0px 0px 0px;
+		margin: 30px 0px 0px 10px;
 		
 	}
 }
-
 
 
 
