@@ -1,8 +1,7 @@
 .header {
 	background: url(../img/bgc.jpg) no-repeat center ; 
-	max-width: 2560px;
-	height: auto;
-
+	max-width: 100% ;
+font-family: "plumb";
 	&__top {
 
 	}
@@ -22,7 +21,7 @@
 		height: 90px;
 		align-items: center;
 		justify-content: center;
-		overflow: hidden;
+		
 
 	}
 
@@ -85,6 +84,7 @@
 
 
 	&__link {
+		font-family: "Circe";
 		display: flex;
 		color: white;
 		font-size: 16px;
@@ -122,6 +122,7 @@ z-index: 9;
 		height: 18px;
 		padding: 0px 10px 0px 27px;
 		color: white;
+		font-family: "Circe";
 		font-size: 16px;
 		line-height: 150%;
 
@@ -193,7 +194,7 @@ z-index: 9;
 
 	&__logo {
 		font-family: "plumb";
-        font-weight: bold;
+        font-weight: Regular;
         font-size: 64px;
 		color: white;
 		height: 74px;
@@ -204,7 +205,8 @@ z-index: 9;
 	}
 
 	&__text {
-font-family: Circe;
+font-family: "plumb";
+font-weight: 400;
 font-size: 24px;
 color: white;
 line-height: 140%;
@@ -271,7 +273,7 @@ padding: 0px 30px 0px 0px;
 		top: 30px;
 		left: 40px;
 		font-size: 21px;
-		font-family: Plumb;
+		font-weight: 400;
         line-height: 130%;
 	    letter-spacing: -0.01em;
 	    color: #FFFFFF;
@@ -284,7 +286,8 @@ padding: 0px 30px 0px 0px;
 		left: 20px;
 		background: url(../img/Arrow.png) no-repeat right;
 		padding: 0px 22px 0px 20px;
-		font-size: 14px;
+		font-family: "Circe";
+	    font-size: 14px;
         line-height: 135%;
         color: #FFFFFF;
 

@@ -48,7 +48,7 @@ padding-bottom: 85px;
 	}
 
 	&__logo {
-font-family: Plumb;
+font-family: "plumb";
 font-weight: 500;
 font-size: 30px;
 margin: 0px 0px 10px 0px;
@@ -61,7 +61,7 @@ color: #2E373B;
 	position: absolute;
 	right: 0;
 	top: 7px;
-	font-family: Plumb;
+	font-family: "plumb";
 	font-size: 21px;
 	letter-spacing: -0.01em;
 	text-decoration-line: underline; 
@@ -97,7 +97,7 @@ color: #2E373B;
 	}
 
 	&__data {
-    font-family: Circe;
+    font-family: "Circe";
     font-size: 16px;
 	color: #F6404F;
 	margin: 0px 0px 14px 30px ;
@@ -105,7 +105,7 @@ color: #2E373B;
 	}
 
 	&__text {
-font-family: Plumb;
+font-family: "plumb";
 font-weight: 500;
 font-size: calc(10px + 11 * (100vw / 1200));
 color: #2E373B;

@@ -60,7 +60,7 @@ background-color:#30BCC9;
 .info {
 
 &__logo {
-font-family: Plumb;
+font-family: "plumb";
 font-weight: 500;
 font-size: 21px;
 letter-spacing: -0.01em;
@@ -79,7 +79,7 @@ margin: 0px 0px 15px 0px ;
 	margin-bottom: 10px;
 	}
 p{
-	font-family: Circe;
+	font-family: "Circe";
 	font-size: 14px;
 	line-height: 135%;
 	color: #E0E0E0;
@@ -93,7 +93,7 @@ li{
 	}
 
 	&__list {
-		font-family: Circe;
+		font-family: "Circe";
 		font-size: 14px;
 		color: #E0E0E0;
 		@media (max-width:  450px ) {

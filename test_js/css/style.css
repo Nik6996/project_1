@@ -1,7 +1,7 @@
 .header {
   background: url(../img/bgc.jpg) no-repeat center;
-  max-width: 2560px;
-  height: auto;
+  max-width: 100%;
+  font-family: "plumb";
 }
 
 .top-header__content {
@@ -24,7 +24,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
 }
 
 .top-header__logo {
@@ -70,6 +69,7 @@
 }
 
 .menu__link {
+  font-family: "Circe";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +103,7 @@
   height: 18px;
   padding: 0px 10px 0px 27px;
   color: white;
+  font-family: "Circe";
   font-size: 16px;
   line-height: 150%;
 }
@@ -162,7 +163,7 @@
 
 .title__logo {
   font-family: "plumb";
-  font-weight: bold;
+  font-weight: Regular;
   font-size: 64px;
   color: white;
   height: 74px;
@@ -172,7 +173,8 @@
 }
 
 .title__text {
-  font-family: Circe;
+  font-family: "plumb";
+  font-weight: 400;
   font-size: 24px;
   color: white;
   line-height: 140%;
@@ -228,7 +230,7 @@
   top: 30px;
   left: 40px;
   font-size: 21px;
-  font-family: Plumb;
+  font-weight: 400;
   line-height: 130%;
   letter-spacing: -0.01em;
   color: #FFFFFF;
@@ -240,6 +242,7 @@
   left: 20px;
   background: url(../img/Arrow.png) no-repeat right;
   padding: 0px 22px 0px 20px;
+  font-family: "Circe";
   font-size: 14px;
   line-height: 135%;
   color: #FFFFFF;
@@ -265,8 +268,9 @@
 }
 
 .top-content__heading {
-  font-family: Plumb;
+  font-family: "plumb";
   font-style: normal;
+  font-weight: 400;
   line-height: 130%;
   letter-spacing: -0.01em;
   color: #FFFFFF;
@@ -284,7 +288,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Circe;
+  font-family: "Circe";
   font-style: normal;
   font-size: calc(7px + 8 * (100vw / 1920));
   line-height: 135%;
@@ -328,7 +332,7 @@
 }
 
 .bottom-content__name {
-  font-family: Plumb;
+  font-family: "plumb";
   font-style: normal;
   font-weight: 500;
   color: #2E373B;
@@ -368,7 +372,7 @@
 }
 
 .card__data {
-  font-family: Circe;
+  font-family: "Circe";
   font-size: 14px;
   margin-top: 20px;
   color: #2E373B;
@@ -379,7 +383,7 @@
 }
 
 .card__href {
-  font-family: Plumb;
+  font-family: "plumb";
   font-weight: 500;
   font-size: 21px;
   letter-spacing: -0.01em;
@@ -387,9 +391,9 @@
 }
 
 .card__this {
-  font-family: Circe;
+  font-family: "Circe";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
   color: #2E373B;
@@ -438,11 +442,19 @@
 }
 
 @font-face {
-  font-family: "plumb-black";
+  font-family: "plumb";
   font-display: swap;
-  src: url("../fonts/plumb-black.woff") format("woff"), url("../fonts/plumb-black.woff2") format("woff2");
+  src: url("../fonts/Plumb_medium.woff") format("woff"), url("../fonts/Plumb_medium.woff2") format("woff2");
   font-weight: 400 700;
-  font-style: bolt normal;
+  font-style: bolt Regular normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  font-display: swap;
+  src: url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: Regular normal;
 }
 
 .footer {
@@ -485,7 +497,7 @@
 }
 
 .info__logo {
-  font-family: Plumb;
+  font-family: "plumb";
   font-weight: 500;
   font-size: 21px;
   letter-spacing: -0.01em;
@@ -499,7 +511,7 @@
 }
 
 .info__text p {
-  font-family: Circe;
+  font-family: "Circe";
   font-size: 14px;
   line-height: 135%;
   color: #E0E0E0;
@@ -510,7 +522,7 @@
 }
 
 .info__list {
-  font-family: Circe;
+  font-family: "Circe";
   font-size: 14px;
   color: #E0E0E0;
 }
@@ -626,7 +638,7 @@
 }
 
 .news__logo {
-  font-family: Plumb;
+  font-family: "plumb";
   font-weight: 500;
   font-size: 30px;
   margin: 0px 0px 10px 0px;
@@ -638,7 +650,7 @@
   position: absolute;
   right: 0;
   top: 7px;
-  font-family: Plumb;
+  font-family: "plumb";
   font-size: 21px;
   letter-spacing: -0.01em;
   -webkit-text-decoration-line: underline;
@@ -659,14 +671,14 @@
 }
 
 .bottom-news__data {
-  font-family: Circe;
+  font-family: "Circe";
   font-size: 16px;
   color: #F6404F;
   margin: 0px 0px 14px 30px;
 }
 
 .bottom-news__text {
-  font-family: Plumb;
+  font-family: "plumb";
   font-weight: 500;
   font-size: calc(10px + 11 * (100vw / 1200));
   color: #2E373B;

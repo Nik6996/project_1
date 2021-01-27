@@ -19,9 +19,9 @@ background-color: #2378FC;
 	}
 
 	&__heading {
-	font-family: Plumb;
+	font-family: "plumb";
     font-style: normal;
-   // font-weight: 500;
+    font-weight: 400;
 	line-height: 130%;
 	letter-spacing: -0.01em;
 	color: #FFFFFF;
@@ -38,7 +38,7 @@ display: flex;
 margin-top: 15px;
 	&__link {
 	display: flex;
-	font-family: Circe;
+	font-family: "Circe";
     font-style: normal;
    //font-weight: normal;
 	font-size: calc(7px + 8 * (100vw / 1920));
@@ -78,7 +78,7 @@ height: 100%;
 	}
 
 	&__name {
-		font-family: Plumb;
+font-family: "plumb";
 font-style: normal;
 font-weight: 500;
 //font-size: 30px;
@@ -122,7 +122,7 @@ font-size: calc(15px + 25 * (100vw / 1920));
 
 
 	&__data {
-	font-family: Circe;
+	font-family: "Circe";
     font-size: 14px;
     margin-top: 20px;
     color: #2E373B;
@@ -134,7 +134,7 @@ font-size: calc(15px + 25 * (100vw / 1920));
 	}
 
 	&__href {
-	font-family: Plumb;
+	font-family: "plumb";
     font-weight: 500;
     font-size: 21px;
     
@@ -143,9 +143,9 @@ font-size: calc(15px + 25 * (100vw / 1920));
 	}
 
 	&__this {
-		font-family: Circe;
+		font-family: "Circe";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     margin-top: 10px;
     color: #2E373B;
